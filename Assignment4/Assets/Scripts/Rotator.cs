@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Rotator : MonoBehaviour
 {
-    public float rSpeed = 100f;
+    public static float rSpeed = 100f;
 
     public void AdjustSpeed(float newSpeed)
     {

@@ -1,18 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PlayerData : MonoBehaviour
+[System.Serializable]
+public class PlayerData
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   /*public int currScore;
+    public int currLives;
+    public int currTime;
+    // public float currentGameSpeed;
+    public float[] position;
 
-    // Update is called once per frame
-    void Update()
+    public PlayerData(Frog rb)
     {
-        
-    }
+        currLives = PickLives.playerLives;
+        currScore = Score.CurrentScore;
+
+        position = new float[3];
+        position[0] = rb.transform.position.x;
+        position[1] = rb.transform.position.y;
+        position[2] = rb.transform.position.z;
+
+    }*/
 }

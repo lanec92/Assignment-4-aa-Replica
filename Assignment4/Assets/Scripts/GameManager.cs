@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
 
     public void RestartLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        PickLives.playerLives--;
+       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

@@ -581,8 +581,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -60.035, y: 24.005}
-  m_SizeDelta: {x: 120.06961, y: 48.009285}
+  m_AnchoredPosition: {x: -21.612, y: 22.499998}
+  m_SizeDelta: {x: 106.91449, y: 48.009285}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &360550464
 MonoBehaviour:
@@ -1943,7 +1943,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 30
+  m_Text: 120
 --- !u!222 &883423056
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1968,8 +1968,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 66, y: 24.005}
-  m_SizeDelta: {x: 120.06961, y: 48.009285}
+  m_AnchoredPosition: {x: 63.563, y: 22.5}
+  m_SizeDelta: {x: 63.43596, y: 26.342049}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &894656109
 GameObject:
@@ -3102,7 +3102,7 @@ GameObject:
   - component: {fileID: 1526538686}
   - component: {fileID: 1526538687}
   m_Layer: 5
-  m_Name: rotatorSlider (1)
+  m_Name: timeSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3516,7 +3516,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1650178427
 RectTransform:
   m_ObjectHideFlags: 0

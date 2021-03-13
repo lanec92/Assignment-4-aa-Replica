@@ -1,18 +1,39 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class SaveSystem : MonoBehaviour
+﻿using UnityEngine;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+public static class SaveSystem
 {
-    // Start is called before the first frame update
-    void Start()
+   /* public static void SavePlayer(Frog rb)
     {
-        
+        BinaryFormatter formatter = new BinaryFormatter();
+        string path = Application.persistentDataPath + "/player.save";
+        FileStream stream = new FileStream(path, FileMode.Create);
+
+        PlayerData data = new PlayerData(rb);
+
+        formatter.Serialize(stream, data);
+        stream.Close();
     }
 
-    // Update is called once per frame
-    void Update()
+    public static PlayerData LoadPlayer()
     {
-        
-    }
+        string path = Application.persistentDataPath + "/player.save";
+        if (File.Exists(path))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(path, FileMode.Open);
+
+            PlayerData data = formatter.Deserialize(stream) as PlayerData;
+            stream.Close();
+
+            return data;
+
+        }
+        else
+        {
+            Debug.LogError("Save file not found in " + path);
+            return null;
+        }
+    }*/
 }
+

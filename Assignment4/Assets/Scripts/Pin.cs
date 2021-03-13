@@ -8,7 +8,7 @@ public class Pin : MonoBehaviour
 
     private bool isPinned = false;
 
-    public float pSpeed = 2000f;
+    public static float pSpeed = 2000f;
     public Rigidbody2D rb;
 
     public void AdjustSpeed(float newSpeed)
@@ -32,12 +32,11 @@ public class Pin : MonoBehaviour
         }
         else if (col.tag == "Pin")
         {
-            blahz -= 1;
             Debug.Log("Hit");
 
             FindObjectOfType<GameManager>().EndGame();
         }
 
-        PickLives.playerLives = blahz - 1;
+
     }
 }
