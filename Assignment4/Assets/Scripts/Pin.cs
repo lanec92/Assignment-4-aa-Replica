@@ -6,13 +6,18 @@ public class Pin : MonoBehaviour
 {
     private bool isPinned = false;
 
-    public float speed = 2000f;
+    public float pSpeed = 2000f;
     public Rigidbody2D rb;
+
+    public void AdjustSpeed(float newSpeed)
+    {
+        pSpeed = newSpeed;
+    }
 
     void Update()
     {
         if(!isPinned)
-            rb.MovePosition(rb.position + Vector2.up * speed * Time.deltaTime);
+            rb.MovePosition(rb.position + Vector2.up * pSpeed * Time.deltaTime);
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -25,6 +30,7 @@ public class Pin : MonoBehaviour
         }
         else if (col.tag == "Pin")
         {
+            PickLives.playerLives -= 1;
             FindObjectOfType<GameManager>().EndGame();
         }
     }
