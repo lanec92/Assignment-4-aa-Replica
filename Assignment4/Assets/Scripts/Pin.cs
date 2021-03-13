@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Pin : MonoBehaviour
 {
+    public int blahz = PickLives.playerLives;
+
     private bool isPinned = false;
 
     public float pSpeed = 2000f;
@@ -30,8 +32,12 @@ public class Pin : MonoBehaviour
         }
         else if (col.tag == "Pin")
         {
-            PickLives.playerLives -= 1;
+            blahz -= 1;
+            Debug.Log("Hit");
+
             FindObjectOfType<GameManager>().EndGame();
         }
+
+        PickLives.playerLives = blahz - 1;
     }
 }

@@ -23,7 +23,7 @@ public class NumLives : MonoBehaviour
 
     void Update()
     {
-        if (PickLives.playerLives == 0)
+        if (PickLives.playerLives <= 0)
         {
             SceneManager.LoadScene(2);
         }

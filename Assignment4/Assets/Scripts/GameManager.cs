@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public Animator animator;
     public void EndGame()
     {
+
         if (gameHasEnded)
             return;
 
