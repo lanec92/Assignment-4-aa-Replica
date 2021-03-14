@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ShowVal : MonoBehaviour
 {
-    public static int tryz = 30;
+    public static int tryz = 5;
     public Text percentageText;
     // Start is called before the first frame update
     void Start()

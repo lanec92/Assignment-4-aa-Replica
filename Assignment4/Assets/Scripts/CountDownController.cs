@@ -22,14 +22,20 @@ public class CountDownController : MonoBehaviour
             yield return new WaitForSeconds(1f);
 
             ShowVal.tryz--;
+            blah();
         }
+    }
 
+    public void blah()
+    {
         if (ShowVal.tryz == 0)
         {
             timeUpTextObject.SetActive(true);
             Invoke("nxtLev", 5);
-        }        
+        }
+
     }
+
     public void nxtLev()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Pin : MonoBehaviour
 {
-    public int blahz = PickLives.playerLives;
 
     private bool isPinned = false;
 
