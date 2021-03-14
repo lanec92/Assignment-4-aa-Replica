@@ -8,7 +8,7 @@ public class Spawner : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             SpawnPin();
         }

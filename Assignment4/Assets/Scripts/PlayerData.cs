@@ -3,21 +3,19 @@
 [System.Serializable]
 public class PlayerData
 {
-   /*public int currScore;
+   public int currScore;
     public int currLives;
     public int currTime;
-    // public float currentGameSpeed;
-    public float[] position;
+    public float currRSpeed;
+    public float currPSpeed;
 
-    public PlayerData(Frog rb)
+    public PlayerData(GameManager gm)
     {
         currLives = PickLives.playerLives;
-        currScore = Score.CurrentScore;
+        currScore = Score.PinCount;
+        currTime = ShowVal.tryz;
+        currRSpeed = Rotator.rSpeed;
+        currPSpeed = Pin.pSpeed;
 
-        position = new float[3];
-        position[0] = rb.transform.position.x;
-        position[1] = rb.transform.position.y;
-        position[2] = rb.transform.position.z;
-
-    }*/
+    }
 }

@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public Rotator rotator;
     public Spawner spawner;
 
+    public GameManager gm;
+
     public Animator animator;
     public void EndGame()
     {
@@ -29,5 +31,29 @@ public class GameManager : MonoBehaviour
     {
         PickLives.playerLives--;
        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void SavePlayer()
+    {
+        SaveSystem.SavePlayer(this);
+        Debug.Log("Game Saved!");
+    }
+    public void LoadPlayer()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+        Debug.Log("Loaded Game w/" + data.currScore + " " + data.currLives);
+        Score.PinCount = data.currScore;
+        PickLives.playerLives = data.currLives;
+        ShowVal.tryz = data.currTime;
+        Rotator.rSpeed = data.currRSpeed;
+        Pin.pSpeed = data.currPSpeed;
+
+    }
+
+    public void SaveAsJSON()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+        string json = JsonUtility.ToJson(data);
+        Debug.Log("Saving as JSON: " + json);
     }
 }

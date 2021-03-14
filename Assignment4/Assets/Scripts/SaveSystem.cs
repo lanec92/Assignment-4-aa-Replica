@@ -3,13 +3,13 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 public static class SaveSystem
 {
-   /* public static void SavePlayer(Frog rb)
+    public static void SavePlayer(GameManager gm)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/player.save";
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        PlayerData data = new PlayerData(rb);
+        PlayerData data = new PlayerData(gm);
 
         formatter.Serialize(stream, data);
         stream.Close();
@@ -34,6 +34,6 @@ public static class SaveSystem
             Debug.LogError("Save file not found in " + path);
             return null;
         }
-    }*/
+    }
 }
 
